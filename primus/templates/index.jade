@@ -3,8 +3,19 @@ extends ./layout.jade
 {% load socialaccount %}
 
 block content
-        h1 Hello #{user}
-        h1 You need to log in first
+        h1 OIDC links:
+        ul
+            li
+                a(href='/openid/.well-known/openid-configuration') /openid/.well-known/openid-configuration
+            li
+                a(href='/openid/authorize') /openid/authorize
+            li
+                a(href='/openid/token') /openid/token
+            li
+                a(href='/openid/jwks') /openid/jwks
+            li
+                a(href='/openid/userinfo') /openid/userinfo
+        h3 Logout:
         a(href='/accounts/logout') Logout
         //a(href='{% provider_login_url "google"%}') Login with Google
 

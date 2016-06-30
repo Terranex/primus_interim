@@ -1,0 +1,4 @@
+-e git+https://github.com/Terranex/django-oidc-provider.git@master#egg=django-oidc-provider
+django-allauth
+pyjade
+uwsgi

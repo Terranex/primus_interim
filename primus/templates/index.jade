@@ -1,0 +1,11 @@
+extends ./layout.jade
+{% load account %}
+{% load socialaccount %}
+
+block content
+        h1 Hello #{user}
+        h1 You need to log in first
+        a(href='/accounts/logout') Logout
+        //a(href='{% provider_login_url "google"%}') Login with Google
+
+                

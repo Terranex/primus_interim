@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-SITE_URL='http://rstegmann-ubuntu.dhcp.meraka.csir.co.za:5000'
+SITE_URL='http://localhost'
 
 LOGIN_REDIRECT_URLNAME = "/"
 

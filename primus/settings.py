@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'primus',
     #'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
     #'allauth.socialaccount.providers.linkedin',
@@ -52,6 +54,8 @@ INSTALLED_APPS = [
 ]
 
 #OIDC_EXTRA_SCOPE_CLAIMS = "preferred_username"
+OIDC_USERINFO = "primus.models.UserProfile"
+OIDC_SKIP_CONSENT_ALWAYS=True
 
 SITE_ID = 1
 SOCIALACCOUNT_PROVIDERS = \

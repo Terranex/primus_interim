@@ -6,6 +6,6 @@ services:
        env_file: ./ENV
        container_name: common-auth-primus
        ports:
-           - "80:8000"
+           - "8080:8000"
        volumes:
            - ./:/opt/app/
